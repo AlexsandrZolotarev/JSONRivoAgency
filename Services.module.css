@@ -1,0 +1,106 @@
+.Service
+{
+    width: 60%;
+    margin: 0 auto;
+}
+.ServiceItems
+{
+}
+.ContainerServiceItems
+{
+    display: grid;
+    grid-auto-flow:column ;
+    grid-template-columns:repeat(auto-fill, minmax(33%,1fr));
+    justify-content: center
+}
+.ServiceTitle
+{
+    width: 100%;
+    text-transform: uppercase;
+    :first-child
+    {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    :last-child
+    {
+        width: 100%;
+        text-align: justify;
+        font-size: 5.3vw;
+        margin-top: 3%;   
+        text-decoration: solid;
+        color: transparent;
+        -webkit-text-stroke: 0.25px rgba(255, 255, 255, 0.2);
+        :after
+        {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
+div[class~=ServiveButton]
+{
+    font-size: smaller;
+    text-transform: uppercase;
+    color: yellow;
+    position: relative;
+    /* after: {
+
+    } */
+}
+.ServiceItem
+{
+    margin-top: 5%;
+    .Item 
+    {
+        margin-left: 20px;
+        margin-top: 5%;
+    }
+    a
+    {
+        :hover
+        {
+            .ServiceItem_Arrow
+            {
+                display: none;
+            } 
+        }   
+    }
+    
+}
+.ServiceItem_Arrow
+{
+    position: absolute;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+}
+.ServiceItem_Icon
+{
+
+}
+
+.ServiceItem_Title
+{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.ServiceItem_Text
+{
+    font-weight: 200;
+    height: 70%;
+    width:90%;
+    position: relative;
+    p
+    {
+
+    }
+
+}
+.ServiceItem
+
+{
+
+}
